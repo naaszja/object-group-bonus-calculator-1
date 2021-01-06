@@ -1,0 +1,28 @@
+body {
+    background-color: #252525;
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+}
+ul {
+    font-size: 24px;
+    list-style-type: none;
+}
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66f00, 0 0 40px #e66f00, 0 0 50px #e66f00, 0 0 60px #e66f00, 0 0 70px #e66f00;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff8e4d, 0 0 40px #ff8e4d, 0 0 50px #ff8e4d, 0 0 60px #ff8e4d, 0 0 70px #ff8e4d, 0 0 80px #ff8e4d;
+    }
+  }
