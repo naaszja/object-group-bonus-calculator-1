@@ -54,9 +54,9 @@ function newEmployeeObject(employee) {
   //creates a new object with new employee bonus percentages and calculates total bonus
   let newEmployee = {
     name: employee.name,
-    bonusPercentage: calculateBonusPercentage(employee),
-    totalCompensation: employee.annualSalary + (calculateBonusPercentage(employee) * employee.annualSalary),
-    totalBonus: calculateBonusPercentage(employee) * employee.annualSalary
+    bonusPercentage: Number(calculateBonusPercentage(employee)),
+    totalCompensation: Number(employee.annualSalary) + Number(calculateBonusPercentage(employee) * employee.annualSalary),
+    totalBonus: Number(calculateBonusPercentage(employee)) * Number(employee.annualSalary)
   };
   return newEmployee;
 }
